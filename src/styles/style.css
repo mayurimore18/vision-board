@@ -1,0 +1,175 @@
+body{
+ background:#fafafa;
+ font-family:'Segoe UI',sans-serif;
+}
+
+/* center pages */
+.center{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+ padding:15px;
+}
+
+/* form theme */
+.form-maroon{
+ background:#fff;
+ border-radius:18px;
+ width:380px;
+ border-top:6px solid #7c1225;
+ box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* dashboard title */
+h2{
+ font-weight:700;
+ color:#222;
+}
+
+/* cards */
+.card{
+ border:none;
+ border-radius:18px;
+ overflow:hidden;
+ transition:.3s;
+}
+
+.card:hover{
+ transform:translateY(-5px);
+ box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.img{
+ height:220px;
+ object-fit:cover;
+}
+
+/* buttons */
+.btn-dark{
+ background:#ff385c;
+ border:none;
+}
+
+.btn-dark:hover{
+ background:#e03150;
+}
+
+.btn-danger{
+ border-radius:10px;
+}
+
+button{
+ border-radius:12px !important;
+}
+
+/* mobile responsive */
+@media(max-width:768px){
+ .form-maroon{
+  width:100%;
+ }
+ .img{
+  height:180px;
+ }
+}
+
+/* login signup background */
+.auth-bg{
+ min-height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background: linear-gradient(135deg,#cc6b7d,#ff9f9f,#ffd6dc);
+ padding:20px;
+}
+
+/* auth card */
+.auth-card{
+ width:900px;
+ max-width:100%;
+ display:flex;
+ border-radius:20px;
+ overflow:hidden;
+ box-shadow:0 20px 60px rgba(0,0,0,0.15);
+ background:white;
+}
+
+/* left panel */
+.auth-left{
+ flex:1;
+ background: linear-gradient(135deg,#ff385c,#ff6b81);
+ color:white;
+ padding:50px;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+}
+
+.auth-left h2{
+ font-weight:700;
+ margin-bottom:15px;
+}
+
+/* right panel */
+.auth-right{
+ flex:1;
+ padding:50px;
+}
+
+/* inputs */
+.auth-right input{
+ border-radius:12px;
+ padding:12px;
+ border:1px solid #ddd;
+ transition:.2s;
+}
+
+.auth-right input:focus{
+ border-color:#ff385c;
+ box-shadow:0 0 0 3px rgba(255,56,92,.15);
+}
+
+/* button */
+.auth-btn{
+ background:#ff385c;
+ border:none;
+ color:white;
+ padding:12px;
+ border-radius:12px;
+ font-weight:600;
+ transition:.2s;
+}
+
+.auth-btn:hover{
+ background:#e03150;
+}
+
+/* mobile layout */
+@media(max-width:768px){
+ .auth-card{
+  flex-direction:column;
+ }
+
+ .auth-left{
+  text-align:center;
+  padding:30px;
+ }
+
+ .auth-right{
+  padding:30px;
+ }
+}
+
+
+.tagline{
+ color:#777;
+ font-size:15px;
+ font-weight:500;
+ letter-spacing:.3px;
+}
+
+@media(max-width:768px){
+ .tagline{
+  font-size:14px;
+ }
+}
